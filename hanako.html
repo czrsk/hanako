@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading Screen</title>
+  <style>
+    body {
+      background: black;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: monospace;
+      font-size: 20px;
+    }
+
+    .typing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .typing {
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(20, end) forwards,
+                 blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 20ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <div class="typing-container">
+    <div class="typing">Loading Hanako.exe...</div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "hanako2.html";
+    }, 3500);
+  </script>
+</body>
+</html>

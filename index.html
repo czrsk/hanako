@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background: black;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+    }
+    pre.big {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 20px;
+      white-space: pre;
+      text-align: center;
+      color: red;
+      animation: flame-flicker 0.8s infinite alternate;
+    }
+
+    @keyframes flame-flicker {
+      0%   { color: #000000; }
+      25%  { color: #ffffff; }
+      50%  { color: #000000; }
+      75%  { color: #ffffff; }
+      100% { color: #000000; }
+    }
+    .pixel-button {
+      font-family: monospace;
+      font-size: 12px;
+      margin-top: 15px;
+      padding: 5px 10px;
+      color: rgb(54, 53, 53);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: pre;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .pixel-button:hover {
+      color: #ffffff;
+      transform: scale(1.1);
+    }
+
+    .pixel-button:active {
+      color: rgb(255, 255, 255); 
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <pre class="big">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ██░ ██  ▄▄▄       ███▄    █  ▄▄▄       ██ ▄█▀ ▒█████  
+▓██░ ██▒▒████▄     ██ ▀█   █ ▒████▄     ██▄█▒ ▒██▒  ██▒
+▒██▀▀██░▒██  ▀█▄  ▓██  ▀█ ██▒▒██  ▀█▄  ▓███▄░ ▒██░  ██▒
+░▓█ ░██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒░██▄▄▄▄██ ▓██ █▄ ▒██   ██░
+░▓█▒░██▓ ▓█   ▓██▒▒██░   ▓██░ ▓█   ▓██▒▒██▒ █▄░ ████▓▒░
+ ▒ ░░▒░▒ ▒▒   ▓▒█░░ ▒░   ▒ ▒  ▒▒   ▓▒█░▒ ▒▒ ▓▒░ ▒░▒░▒░ 
+ ▒ ░▒░ ░  ▒   ▒▒ ░░ ░░   ░ ▒░  ▒   ▒▒ ░░ ░▒ ▒░  ░ ▒ ▒░ 
+ ░  ░░ ░  ░   ▒      ░   ░ ░   ░   ▒   ░ ░░ ░ ░ ░ ░ ▒  
+ ░  ░  ░      ░  ░         ░       ░  ░░  ░       ░ ░  
+                                                       
+  </pre>
+
+  <button class="pixel-button" onclick="location.href='hanako.html'">
+    >>> Click me to enter. <<<
+  </button>
+</body>
+</html>
